@@ -9,14 +9,37 @@
     <body>
         <header>
             <h1>BarberShop</h1>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#team">Our Team</a>
-                <a href="#contact">Contact</a>
-            </nav>
         </header>
+        <div class="container">
+            <c1>Schedule your haircut</c1>
+        <form action="https://formsubmit.co/el/yifixu" method="POST">
+            <p><input type="text" name="Name" placeholder="First and Last name" required></p>
+            <p><input type="text" name="Phone" placeholder="Your phone number" required></p>
+            <p><input type="email" name="email" placeholder="Email" required></p>
+            <label for="appointmentDate">Select Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+            <p><label for="imageUpload"> What haircut do you want ?</label></p>
+            <label for="imageUpload" id="imageUploadLabel" class="file-label">Choose a File</label>
+            <input type="file" id="imageUpload" name="imageUpload" accept="image/*" style="display: none;" onchange="previewImage(event)">
+            <p></p><img id="imagePreview" ><p></p>
+            <label for="submitbtn" class="submit-btn">Schedule Appointment</label>
+            <button type="submit" id="submitbtn" style="display: none;"></button>
+        </form>
+        </div>
+        <script>
+            function previewImage(event) {
+                var input = event.target;
+                var preview = document.getElementById('imagePreview');
     
-       
+                var reader = new FileReader();
+                reader.onload = function(){
+                    preview.src = reader.result;
+                };
+                
+                if(input.files && input.files[0]){
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
     </body>
 </html>

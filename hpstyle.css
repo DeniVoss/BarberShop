@@ -19,3 +19,97 @@ nav a {
     color: white;
     font-style: italic;
 }
+.container {
+    max-width: 600px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.171);
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-size: 20px;
+            color: #fff ;
+}
+#imagePreview{
+    width: 250px;
+}
+input[type="text"] {
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 600px;
+  height: 1.15em;
+  border: 0.15em solid #000000;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  text-align: center;
+  color: #000000;
+}
+input[type="email"] {
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 600px;
+    height: 1.15em;
+    border: 0.15em solid #000000;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #000000;
+}
+input[type="date"]{
+    background-color: #00010200;
+    padding: 5px;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-color: forestgreen;
+    border-radius: 10px;
+    border-style: initial;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: forestgreen;
+    color: #ffffff;
+}
+
+input[type="file"] :hover {
+    background-color: forestgreen;
+    color: #ffffff;
+}
+
+.file-label {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    border-color: forestgreen;
+    border-radius: 10px;
+    border-style: initial;
+    cursor: pointer;
+}
+
+.file-label:hover {
+    background-color: forestgreen;
+    color: #ffffff;
+}
